@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>ME</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style>
+        @font-face {
+  font-family: 'Poiret One';
+            src: url('PoiretOne.ttf'); }
+        /* following two viewport lines are equivalent to meta viewport statement above, and is needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+       @-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }
+        body{
+            margin:0px;
+            overflow:hidden;
+            font-family:'poiret one';
+        }
+        #one{
+            background-color:#111;
+            width:100%;
+                height:100vh;
+        }
+        #one #blur{
+            opacity: 0.8;
+            width:100%;
+            height:100%;
+            top:0px;
+            position: absolute;
+        }
+        #one #h1{
+            position:absolute;
+            top:130px;
+            width:100%;
+            font-size:120px;
+            text-align:center;
+            font-family:'poiret one';
+            color:white;
+            transform: translateX(40px);
+            opacity:0.5;
+            transition: all 2s;
+            font-weight: 100;
+        }
+        #one .star{
+           height:5px;
+            width:5px;
+            position:absolute;
+        }
+        #left,#right{
+            position:fixed;
+            top:46%;
+            left:10px;
+            z-index:9999;
+            background:url('switch.png');
+            background-size:100% 100%;
+            border:0px;
+            height:50px;
+            width:50px;
+            opacity:0.8;
+            transition:opacity 0.3s;
+}
+        #left:active,#right:active{
+            opacity:0.5;
+        }
+        #right{
+            left:auto;
+            right:10px;
+        }
+        #song{
+            height:50px;
+            width:50px;
+            background:url('music.png');
+            background-size:40% 45%;
+            background-position: center;
+            border-radius:50%;
+            border-style:solid;
+            border-color:white;
+            border-width:2px;
+            background-repeat: no-repeat;
+            position:fixed;
+            bottom:10px;
+            left:10px;
+            opacity:0.3;
+            background-color:white;
+
+            transition: all 0.3s;
+            z-index:99999999;
+        }
+        #about{
+            z-index:999999999;
+            color:white;
+            font-family:'poiret one';
+            font-size:18px;
+            display:inline block;
+            width:100%;text-align:center;
+            bottom:100px;
+            position:absolute;
+        }
+        #aboutSong{
+            position:absolute;
+            bottom:20px;
+            left:23px;
+            width:130px;
+            z-index:999;
+            background:#111;
+            font-family:'poiret one';
+            padding:3px 5px;
+            border-radius:9px;
+            color:white;
+            opacity:0;
+            transition:all 1s;
+        }
+        #white{
+            display: block;
+            position:fixed;
+            z-index:9999999999;
+            top:0px;
+            width:100%;
+            height:100%;background-color:white;
+            opacity:1;
+            transition:all 2s;
+        }
+        #stars{
+           transform:translateX(0px);
+                animation-name: stars;
+    animation-duration: 4s;
+        }
+        @keyframes stars{
+    from {transform:translateX(100px);}
+    to {transform:translateX(0px);}
+}
+    </style>
+
+    <!-- Uncomment the following scripts if you convert your "Standard HTML5" project into a "Cordova" project. -->
+    <!-- <script src="cordova.js"></script> -->          <!-- phantom library, needed for Cordova api calls, added during build -->
+    <!-- <script src="js/app.js"></script> -->           <!-- recommended location of your JavaScript code relative to other JS files -->
+    <!-- <script src="xdk/init-dev.js"></script> -->     <!-- normalizes device and document ready events, see README for details -->
+</head>
+
+<body onload="Loaded()">
+    <audio id="myAudio" loop>
+  <source src="pg1/secret.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    <a id="left" onclick="LeftB()"></a>
+    <a id="right" onclick = "RightB()"></a>
+    <a id="song" onclick="toggleSound()"></a>
+<div id="white"></div>
+<div id="one">
+    <img id="blur" src="pg1/blur.png">
+    <h1 id="h1">M E<br><span style="font-size:25px;letter-spacing:3px;position:relative;top:-70px;">THE EXERCISE APP</span></h1><div id="stars"><img class="star" src="pg1/star.png" style="top:10px;left:40px">
+<img class="star" src="pg1/star.png" style="top:50px;left:80px">
+<img class="star" src="pg1/star.png" style="top:40px;left:120px">
+<img class="star" src="pg1/star.png" style="top:20px;left:160px">
+<img class="star" src="pg1/star.png" style="top:60px;left:190px">
+<img class="star" src="pg1/star.png" style="top:130px;left:230px">
+<img class="star" src="pg1/star.png" style="top:370px;left:270px">
+<img class="star" src="pg1/star.png" style="top:340px;left:320px">
+<img class="star" src="pg1/star.png" style="top:430px;left:250px">
+<img class="star" src="pg1/star.png" style="top:530px;left:130px">
+<img class="star" src="pg1/star.png" style="top:240px;left:340px">
+<img class="star" src="pg1/star.png" style="top:320px;left:360px">
+<img class="star" src="pg1/star.png" style="top:350px;left:400px">
+<img class="star" src="pg1/star.png" style="top:150px;left:160px">
+<img class="star" src="pg1/star.png" style="top:450px;left:370px">
+<img class="star" src="pg1/star.png" style="top:550px;left:250px">
+<img class="star" src="pg1/star.png" style="top:380px;left:140px">
+<img class="star" src="pg1/star.png" style="top:280px;left:10px">
+<img class="star" src="pg1/star.png" style="top:180px;left:110px">
+<img class="star" src="pg1/star.png" style="top:80px;left:310px">
+<img class="star" src="pg1/star.png" style="top:320px;left:290px">
+<img class="star" src="pg1/star.png" style="top:320px;left:60px">
+</div>
+    <div id="aboutSong"><marquee>The Secret | D.M Galaxy</marquee></div>
+    <span id="about">Designed By Abhay Saxena<br><br>for my dear mom</span>
+    </div>
+<script>
+    var y = 0;
+    function Loaded(){
+        var play = getParameterByName('play');
+      document.getElementById('white').style.opacity = "0";
+       setTimeout(function(){document.getElementById('white').style.display = "none"; },2000);
+      document.getElementById('h1').style.opacity = "1";
+        document.getElementById('h1').style.transform = "translateX(0px)";
+      if(play == 1){
+          y = 1;
+      }
+      if(play == 0){
+          y = 0;
+      }
+      if(y==1){
+
+       x.play();x.currentTime = getParameterByName('time');
+       document.getElementById('song').style.opacity = "1";document.getElementById('aboutSong').style.opacity = "1";}else{
+           x.pause();
+        document.getElementById('song').style.opacity = "0.3";
+        document.getElementById('aboutSong').style.opacity = "0";
+
+
+       }
+
+    }
+    function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+    var x = document.getElementById("myAudio");
+    document.addEventListener('deviceready', function () {
+    if(typeof Fullscreen !== 'undefined'){
+       Fullscreen.on();
+    }
+    if(y==1){
+       x.play();
+    }
+});
+    function LeftB(){
+        document.getElementById('white').style.display = "block";
+        document.getElementById('white').style.opacity = "1";
+        setTimeout(function(){
+            window.location.href="index.html?play=" + y + "&time=" + x.currentTime;
+        },2100)
+    }
+    function RightB(){
+        document.getElementById('white').style.display = "block";
+        document.getElementById('white').style.opacity = "1";
+        setTimeout(function(){
+            window.location.href="2.html?play=" + y + "&time=" + x.currentTime;
+        },2100)
+    }
+   function toggleSound(){
+       if(y==0){
+           y=1;
+       x.play();
+       document.getElementById('song').style.opacity = "1";document.getElementById('aboutSong').style.opacity = "1";}else{
+           y=0;
+           x.pause();
+        document.getElementById('song').style.opacity = "0.3";
+           document.getElementById('aboutSong').style.opacity = "0";
+       }
+   }
+</script>
+</body>
+</html>
