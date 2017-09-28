@@ -5,9 +5,13 @@
  <link rel="stylesheet" href="dist/css/swiper.min.css">
 <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
-	<title>ME</title>
+    <meta name="theme-color" content="#ff3333">
+	<title>ME | the exercise app</title>
 </head>
 <body onload = "Loaded()">
+  <audio id="sound">
+    <source src="sound/1.wav" type="audio/wav">
+  </audio>
 <div id="intro">
 <div id="line"></div>
 <div id="line2"></div>
@@ -24,34 +28,31 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide" id="nature">
                   <div id="circletimer1"  onclick="Nature()">
-<span id="tim">20/30s</span>
-<span id="lap">10/30</span>
+<span id="tim">0/30s</span>
+<span id="lap">0/20</span>
                   </div>
                   </div>
                 <div class="swiper-slide" id="ocean">
-                  <div id="circletimer2">
-<span id="tim">20/30s</span>
-<span id="lap">10/30</span>
+                  <div id="circletimer2" onclick="Ocean()">
+<span id="tim1">0/10s</span>
+<span id="lap1">0/40</span>
                   </div>
 
                 </div>
-                <div class="swiper-slide" id="sky">
-                  <div id="circletimer3">
-                  <span id="tim">20/30s</span>
-                  <span id="lap">10/30</span>
-                  </div>
-                </div>
-                <div class="swiper-slide" id="machine">
-                  <div id="circletimer4">
-                  <span id="tim">20/30s</span>
-                  <span id="lap">10/30</span>
-                  </div>
-                </div>
                 <div class="swiper-slide" id="red">
-                  <div id="circletimer5">
+                  <div id="circletimer5" onclick="Stop()">
                   STOP
                   </div>
                 </div>
+                <div class="swiper-slide" id="sky">
+                  <div id="circletimer3" onclick="Sky()">
+                  <span id="tim2">0/-</span>
+                  <span id="lap2">0/-</span>
+                  </div>
+                  <input type='number' id='intim' placeholder ="time"></input>
+                  <input type='number' id='inlap' placeholder ="laps"></input>
+                </div>
+
 
             </div>
         </div>
@@ -61,7 +62,15 @@
 <!-- Swiper JS -->
     <script src="dist/js/swiper.min.js"></script>
     <script>
-    var swiper = new Swiper('.swiper-container');
+    var swiper = new Swiper('.swiper-container', {
+         pagination: '.swiper-pagination',
+         nextButton: '.swiper-button-next',
+         prevButton: '.swiper-button-prev',
+         slidesPerView: 1,
+         paginationClickable: true,
+         spaceBetween: 0,
+         loop: false
+     });
     </script>
 </body>
 </html>
