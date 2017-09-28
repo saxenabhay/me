@@ -77,6 +77,7 @@ var np = 0;
 var ni;
 var end;
 function Nature(){
+  window.plugins.insomnia.keepAwake();
   if(n==2){
     Stop();
     var nt=0;
@@ -126,6 +127,7 @@ var op = 0;
 var oi;
 var end;
 function Ocean(){
+  window.plugins.insomnia.keepAwake();
   if(o==2){
     Stop();
     var ot=0;
@@ -175,6 +177,7 @@ var sp = 0;
 var si;
 var end;
 function Sky(){
+  window.plugins.insomnia.keepAwake();
   if(s==2){
     Stop();
     intim.disabled = "true";
@@ -223,6 +226,7 @@ document.getElementById('circletimer3').style.color = "#fff";
 }
 /*sky till here*/
 function Stop(){
+  window.plugins.insomnia.allowSleepAgain();
     document.getElementById('circletimer5').style.background = "rgba(255, 51, 51, 0.3)";
       document.getElementById('circletimer5').style.color = "#fff";
     clearInterval(ni);
@@ -248,19 +252,3 @@ setTimeout(function(){
   document.getElementById('circletimer5').style.color = "black";
 },500);
 }
-document.addEventListener('deviceready', function () {
-    // Android customization
-    cordova.plugins.backgroundMode.setDefaults({ text:'Doing heavy tasks.'});
-    // Enable background mode
-    cordova.plugins.backgroundMode.enable();
-
-    // Called when background mode has been activated
-    cordova.plugins.backgroundMode.onactivate = function () {
-        setTimeout(function () {
-            // Modify the currently displayed notification
-            cordova.plugins.backgroundMode.configure({
-                text:'Running in background for more than 5s now.'
-            });
-        }, 5000);
-    }
-}, false);
