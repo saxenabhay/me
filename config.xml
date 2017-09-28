@@ -3,7 +3,7 @@
   <name>ME</name>
   <description>The Exercise App</description>
   <author email="abhaysaxena.in@gmail.com" href="https://abhay-s.github.io">Abhay Saxena</author>
-  <preference name="phonegap-version" value="cli-6.4.0" />
+  <preference name="phonegap-version" value="cli-6.5.0" />
   <preference name="permissions" value="none" />
   <preference name="orientation" value="portrait" />
   <preference name="target-device" value="universal" />
