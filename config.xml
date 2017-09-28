@@ -8,6 +8,6 @@
   <preference name="orientation" value="portrait" />
   <preference name="target-device" value="universal" />
   <preference name="fullscreen" value="true" />
-
+  <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.6.3" />
   <icon src="icon.png" />
 </widget>
