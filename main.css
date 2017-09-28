@@ -164,20 +164,6 @@ body,html{
        -webkit-align-items: center;
        align-items: center;
    }
-h1{
-  display:inline-block;
-  position:fixed;
-  z-index:1;
-  top:20px;
-  width:100%;
-  text-align:center;
-  font-size:150px;
-  color:white;
-}
-h1 span{
-  display:block;
-  font-size:30px;
-}
    #nature{
      z-index:15;
 background: linear-gradient(to bottom right, #FFC371, #FF5F6D);
@@ -217,7 +203,7 @@ background: linear-gradient(to top right, #C4E0E5, #4CA1AF);
   transform: rotate(90deg);
   position:fixed;
   left:-140px;
-  top:340px;
+  top:190px;
   z-index:1;
   color:white;
 }

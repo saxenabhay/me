@@ -1,7 +1,6 @@
 
 var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-document.getElementById('h1').style.opacity = "0";
 document.getElementById('credit').style.opacity = "0";
 document.getElementById('circle').style.top = (h/2 - 100) + "px";
 document.getElementById('circle').style.left = (w/2 - 100) + "px";
@@ -52,7 +51,6 @@ setTimeout(function(){
 setTimeout(function(){
   document.getElementById('one').style.transform = "translate(0px , 100vh)";
   document.getElementById('time').style.opacity = "1";
-  document.getElementById('h1').style.opacity = "1";
   document.getElementById('credit').style.opacity = "1";
   var currentTime = new Date()
   var hours = currentTime.getHours()
