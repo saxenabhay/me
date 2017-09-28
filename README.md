@@ -7,10 +7,10 @@ Release on android: https://github.com/abhay-s/me/releases .
 
 Screenshots of the app-
 
-![screenshot 1](/screenshots/1.jpg?raw=true "")
-![screenshot 2](/screenshots/2.jpg?raw=true "")
-![screenshot 3](/screenshots/3.jpg?raw=true "")
-![screenshot 3](/screenshots/4.jpg?raw=true "")
+![screenshot 1](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/1.JPG "")
+![screenshot 2](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/2.JPG "")
+![screenshot 3](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/3.JPG "")
+![screenshot 4](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/4.JPG "")
 
 USAGE RIGHTS :
 
