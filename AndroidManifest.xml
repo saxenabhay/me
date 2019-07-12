@@ -1,0 +1,11 @@
+<manifest>
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+<Elements>
+
+<application>
+
+<Elements>
+
+</application>
+
+</manifest>

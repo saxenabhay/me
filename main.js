@@ -310,3 +310,4 @@ window.onload = function() {
 	document.getElementById('30str').innerHTML = localStorage.getItem("30streak");
 	document.getElementById('30lng').innerHTML = localStorage.getItem("30longest");
 }
+lock = window.navigator.requestWakeLock('screen');
