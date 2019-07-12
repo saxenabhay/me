@@ -310,4 +310,6 @@ window.onload = function() {
 	document.getElementById('30str').innerHTML = localStorage.getItem("30streak");
 	document.getElementById('30lng').innerHTML = localStorage.getItem("30longest");
 }
+
+//for attempt to enable insomia. if unstable, remove androidmanifest as well.
 lock = window.navigator.requestWakeLock('screen');
