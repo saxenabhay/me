@@ -177,8 +177,8 @@ background: linear-gradient(to bottom right, #FFC371, #FF5F6D);
 background: linear-gradient(to top right, #C4E0E5, #4CA1AF);
 
 }
-#red{
-  background: linear-gradient(to right, #d31027, #ea384d);
+#streak{
+  background: #111;
 }
 #tim,#tim1,#tim2{
   width:100%;
@@ -223,10 +223,74 @@ background: linear-gradient(to top right, #C4E0E5, #4CA1AF);
   font-family:'raleway';
   width:50%;
 }
+#streakcycle{
+  font-weight: bolder;
+  font-size:20px;
+  color:#6495ED;
+}
+#headingforstreak{
+  color:white;
+  font-size:30px;
+  letter-spacing: 8px;
+  padding:10px;
+  display: block;
+  text-align:center;
+  vertical-align: middle;
+}
+#progress{background-color:white;
+border-radius:4px;
+padding:20px;
+margin:30px;
+display: block;
+text-align:center;
+font-size: 60%;
+letter-spacing:5px;
+color:#111;
+}
 #intim{
   left:0px;
   background:rgba(255,55,55,0.3);
 }
 #inlap{
   right:0px;
+}
+table{
+  border-collapse: collapse;
+  padding:10px;
+}
+table tr{
+  width:40px;height:50px;
+}
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+table tr:nth-child(odd) {
+ background-color: #fff;
+}
+table th {
+  border-bottom: solid #111 4px;
+}
+#stopbut{
+  position:fixed;
+  z-index:999;
+  display :block;
+  width:100vw;
+  bottom:50px;
+  text-align:center;
+}
+#symbol{
+  opacity:0;
+  display:inline-block;
+  border-radius:150px;
+  padding:15px 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition:all 0.5s ease-in-out;
+}
+#boxshaped{
+  margin:none;
+  display:inline-block;
+  margin-bottom:-3px;
+  width:25px;
+  height:25px;
+  background-color: white;
 }

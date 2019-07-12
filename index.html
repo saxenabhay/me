@@ -1,76 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="main.css" rel="stylesheet">
- <link rel="stylesheet" href="dist/css/swiper.min.css">
-<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
-    <meta name="theme-color" content="#ff3333">
+	<link href="main.css" rel="stylesheet">
+	<link href="dist/css/swiper.min.css" rel="stylesheet">
+	<meta content="width=device-width, minimum-scale=1, initial-scale=1" name="viewport">
+	<meta content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no" name="viewport">
+	<meta content="#ff3333" name="theme-color">
 	<title>ME | the exercise app</title>
 </head>
-<body onload = "Loaded()">
-  <audio id="sound">
-    <source src="sound/1.wav" type="audio/wav">
-  </audio>
-<div id="intro">
-<div id="line"></div>
-<div id="line2"></div>
-<div id="circle"></div>
-<div id="purpbox"></div>
-<div id="wcircle"></div>
-<div id="title">ME</div>
-</div>
-<div id="one">
-    <Div id="time"></div>
+<body>
+	<audio id="sound"><source src="sound/1.mp3" type="audio/wav"></audio>
+	<div id="intro">
+		<div id="line"></div>
+		<div id="line2"></div>
+		<div id="circle"></div>
+		<div id="purpbox"></div>
+		<div id="wcircle"></div>
+	</div>
+	<div id="title">
+		ME
+	</div>
+	<div id="stopbut">
+		<div id="symbol" onclick="Stop(2)">
+			<div id="boxshaped"></div>
+		</div>
+	</div>
+	<div id="one">
+		<div id="time"></div><span id="credit">invented for my dear Mummy(Nishu)<span>-Abhay Saxena</span></span>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" id="nature">
+					<div id="circletimer1" onclick="Nature()">
+						<span id="tim">0/30s</span> <span id="lap">0/20</span>
+					</div>
+				</div>
+				<div class="swiper-slide" id="ocean">
+					<div id="circletimer2" onclick="Ocean()">
+						<span id="tim1">0/10s</span> <span id="lap1">0/40</span>
+					</div>
+				</div>
+				<div class="swiper-slide" id="sky">
+					<div id="circletimer3" onclick="Sky()">
+						<span id="tim2">0/-</span> <span id="lap2">0/-</span>
+					</div><input id='intim' placeholder="time" type='number'> <input id='inlap' placeholder="laps" type='number'>
+				</div>
+				<div class="swiper-slide" id="streak">
+					<div id="headingforstreak">
+						S T A T S<br>
+						<br>
+						<div id="progress">
+							<table style="width:100%">
+								<tr>
+									<th></th>
+									<th>30s</th>
+									<th>10s</th>
+								</tr>
+								<tr>
+									<td style="font-size:10px;">Streak</td>
+									<td id="30str">1</td>
+									<td id="10str">1</td>
+								</tr>
+								<tr>
+									<td style="font-size:10px;">longest</td>
+									<td id="30lng">1</td>
+									<td id="10lng">1</td>
+								</tr>
+							</table><br>
+							<br>
+							<span style="font-size:10px;">CLEAR DATA IN YEAR TRANSITION</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="main.js">
+	</script> <!-- Swiper JS -->
 
-      <span id="credit">invented for my dear Mummy(Nishu)<span>-Abhay Saxena</span></span>
-      <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" id="nature">
-                  <div id="circletimer1"  onclick="Nature()">
-<span id="tim">0/30s</span>
-<span id="lap">0/20</span>
-                  </div>
-                  </div>
-                <div class="swiper-slide" id="ocean">
-                  <div id="circletimer2" onclick="Ocean()">
-<span id="tim1">0/10s</span>
-<span id="lap1">0/40</span>
-                  </div>
-
-                </div>
-                <div class="swiper-slide" id="red">
-                  <div id="circletimer5" onclick="Stop()">
-                  STOP
-                  </div>
-                </div>
-                <div class="swiper-slide" id="sky">
-                  <div id="circletimer3" onclick="Sky()">
-                  <span id="tim2">0/-</span>
-                  <span id="lap2">0/-</span>
-                  </div>
-                  <input type='number' id='intim' placeholder ="time"></input>
-                  <input type='number' id='inlap' placeholder ="laps"></input>
-                </div>
-
-
-            </div>
-        </div>
-</div>
-</div>
-<script src="main.js"></script>
-<!-- Swiper JS -->
-    <script src="dist/js/swiper.min.js"></script>
-    <script>
-    var swiper = new Swiper('.swiper-container', {
-         pagination: '.swiper-pagination',
-         nextButton: '.swiper-button-next',
-         prevButton: '.swiper-button-prev',
-         slidesPerView: 1,
-         paginationClickable: true,
-         spaceBetween: 0,
-         loop: false
-     });
-    </script>
+	<script src="dist/js/swiper.min.js">
+	</script>
+	<script>
+	   var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        slidesPerView: 1,
+	        paginationClickable: true,
+	        spaceBetween: 0,
+	        loop: false
+	    });
+	</script>
 </body>
 </html>
