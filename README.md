@@ -1,6 +1,7 @@
 # me
-
 the exercise app
+
+Come on! I was just 14 years old back then when i first made it. Don't Judge please:P
 
 The following app is cutomized for personal use and is for developer inspiration. Dedecated to my mom , this app is a beautifully designed app to assist her in exercise.
 Release on android: https://github.com/abhay-s/me/releases .
