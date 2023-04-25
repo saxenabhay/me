@@ -8,10 +8,10 @@ Release on android: https://github.com/abhay-s/me/releases .
 
 Screenshots of the app-
 
-![screenshot 1](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n1.jpg | width=100)
-![screenshot 2](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n2.jpg | width=100)
-![screenshot 3](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n3.jpg | width=100)
-![screenshot 4](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n4.jpg | width=100)
+![screenshot 1](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n1.jpg ""| width=100)
+![screenshot 2](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n2.jpg ""| width=100)
+![screenshot 3](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n3.jpg ""| width=100)
+![screenshot 4](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n4.jpg ""| width=100)
 
 USAGE RIGHTS :
 
