@@ -7,12 +7,12 @@ The following app is cutomized for personal use and is for developer inspiration
 Release on android: https://github.com/abhay-s/me/releases .
 
 Screenshots of the app-
-
-![screenshot 1](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n1.jpg ""| width=100)
-![screenshot 2](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n2.jpg ""| width=100)
-![screenshot 3](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n3.jpg ""| width=100)
-![screenshot 4](https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n4.jpg ""| width=100)
-
+<p float="left">
+<img src="https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n1.jpg" width="35%" display = "inline">
+<img src="https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n2.jpg" width="35%" style="display:inline">
+<img src="https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n3.jpg" width="35%" style="display:inline">
+<img src="https://raw.githubusercontent.com/abhay-s/me/master/screenshots/n4.jpg" width="35%" style="display:inline">
+</p>
 USAGE RIGHTS :
 
 any one is allowed to use this app's code but , this link  - " https://github.com/abhay-s/me/ " must be put in the app 'visible to the users'(not just hidden or commented in the source code) with a font size of minimum 14px of CSS text size.
