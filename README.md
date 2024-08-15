@@ -1,7 +1,7 @@
 # me
 the exercise app
 
-Made in 2016-17.
+Made in 2016-17. Updated 2021 switching from Apache Cordova to Android Webview.
 
 The following app is cutomized for personal use and is for developer inspiration. Dedecated to my mom , this app is a beautifully designed app to assist her in exercise.
 Release on android: https://github.com/abhay-s/me/releases .
